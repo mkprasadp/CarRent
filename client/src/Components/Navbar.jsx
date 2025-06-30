@@ -40,10 +40,9 @@ const Navbar = ({SetshowLogin}) => {
 
         </div>
 
-        <div className=''>
+        <div className='sm:hidden cursor-pointer' aria-label='Menu' onClick={()=>setOpen(!open)}>
             <img src={open ? assets.close_icon : assets.menu_icon} alt='' />
         </div>
-
 
     </div>
   )
