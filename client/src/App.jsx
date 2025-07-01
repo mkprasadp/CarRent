@@ -6,6 +6,10 @@ import CarDetails from './Pages/CarDetails';
 import Cars from './Pages/Cars';
 import MyBooking from './Pages/MyBooking';
 import Footer from './Components/Footer';
+import Layout from './Pages/owners/Layout';
+import AddCars from './Pages/owners/AddCars';
+import ManageCars from './Pages/owners/ManageCars';
+import ManageBooking from './Pages/owners/ManageBooking';
 
 const App = () => {
 
@@ -21,9 +25,14 @@ const App = () => {
         <Route path='/car-details/:id' element={<CarDetails/>}/>
         <Route path='/cars' element={<Cars/>}/>
         <Route path='/my-bookings' element={<MyBooking/>}/>
+        <Route path='/owner' element={<Layout/>}>
+          <Route path='add-cars' element={<AddCars/>}/>
+          <Route path='manage-cars' element={<ManageCars/>}/>
+          <Route path='manage-bookings' element={<ManageBooking/>}/>
+        </Route>
       </Routes>
       
-      <Footer/>
+      {!isOwnerPath && <Footer/>}
     </>
   )
 }
