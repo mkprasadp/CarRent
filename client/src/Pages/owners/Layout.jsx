@@ -11,8 +11,7 @@ const Layout = () => {
       <Navbarowner/>
       <div className='flex'>
         <SideBar/>
-        <Outlet/>
-        <Dashboard/>
+        <Outlet/> 
       </div>
     </div>
   )
