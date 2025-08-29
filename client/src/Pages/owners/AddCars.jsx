@@ -22,6 +22,7 @@ const AddCars = () => {
     e.preventDefault();
   }
 
+  
   return (
     <div className='px-4 py-10 md:px-10 flex-1 '>
       <Title Title="Add New Car" subTitle="Fill in details to list a new car for booking, including pricing, avaliability, and car specifications."/>
