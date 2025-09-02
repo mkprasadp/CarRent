@@ -21,7 +21,6 @@ const AddCars = () => {
   const onSubmithandler = async()=>{
     e.preventDefault();
   }
-
   
   return (
     <div className='px-4 py-10 md:px-10 flex-1 '>
